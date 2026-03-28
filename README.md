@@ -13,9 +13,7 @@
 
 Built back when you had to understand trigonometry and geometry just to make a sprite move across a screen, it's a fun look back at the simple mechanics and memory management that was important at the time.
 
-<p align="center">
-  <video src="_matforvideo/havocgameplay_edited.mp4" width="100%" playsinline autoplay loop muted controls></video>
-</p>
+<video src="https://github.com/user-attachments/assets/1ab69448-f7d8-4460-9201-f616cd75a121" width="100%" playsinline autoplay loop muted controls></video>
 
 ## 🛠️ The Tech Stack of the Gods
 * **Python** (The sacred texts)
@@ -49,7 +47,7 @@ No hardcoded levels. This old fella uses `libxml2` to rip game configurations st
 </hurtquotes>
 ```
 
-### 2. Dynamic Speech Bubbles (Because AI needs to BM)
+### Dynamic Speech Bubbles (Because AI needs to BM)
 * **Balloon System:** A big-brain `balloon` sprite class that calculates its own dimensions dynamically based on how much text it needs to spit.
 * **Contextual Spawning:** Bubbles appear right next to the speaking entity, flipping left or right depending on screen position so you never miss the insult.
 * **Triggers:** Enemies will literally taunt you upon killing you (killquotes) or scream in agony/rage when their HP drops (hurtquotes). BM at its finest.
@@ -65,7 +63,7 @@ class balloon(pygame.sprite.Sprite):
         # Custom polygon pointers are drawn on the fly based on where the enemy is standing.
 ```
 
-### 3. Image Shattering / Object Breaking (Visual Carnage)
+### Image Shattering / Object Breaking (Visual Carnage)
 * **Sprite Chopping:** The `explosion` class doesn't just swap an image; it literally simulates objects breaking apart into jagged pieces when destroyed.
 * **Quadrant Splitting:** Uses `pygame.transform.chop` to violently slice the destroyed entity's original PNG into four distinct, bloody quadrants.
 * **Physics Particles:** Each sliced quadrant morphs into a `particle` object, flying off with randomized angles, rotation speeds, and fading alpha values to mimic the physical debris of your defeated foes.
@@ -80,7 +78,7 @@ class explosion(pygame.sprite.Sprite):
         # Give them velocity and watch them bleed.
 ```
 
-### 4. Advanced Collision Detection (No BS Hitboxes)
+### Advanced Collision Detection (No BS Hitboxes)
 * **Pixel-Perfect Accuracy:** Bounding boxes? Get out of here. This implements custom hitmasks mapping the alpha channels of PNGs to ensure collisions are based on the *actual drawn pixels* of the ships and lasers. If you dodged it visually, you dodged it mechanically.
 *(Note: The `pixelperfect.py` module used for this was a legendary community snippet written by John Eriksson in 2006, released to the public domain. Respect your elders.)*
 
@@ -95,18 +93,18 @@ for cshot in aliens_shots.keys():
             calien.hit(cshot.power) # Get rekt
 ```
 
-### 5. Player Mechanics & Weaponry (Sweaty Tryhard Loadouts)
+### Player Mechanics & Weaponry (Sweaty Tryhard Loadouts)
 * **Resource Management:** Tracks your "Hull" (HP) and "Antimatter" (AM). AM regenerates over time and is your lifeblood for speed-boosting and unleashing absolute hellfire.
 * **Advanced Weapon Targeting:**
     * `homingShot`: Literally tracks targets by calculating interception angles and adjusting its trajectory mid-flight. There is no escape.
     * `magneticShot`: Analyzes impact predictions against multiple targets and aggressively snaps to the closest poor soul.
     * Lazors were in the backburner at the time...
 
-### 6. Enemy Artificial Intelligence (They Know What You're Doing)
+### Enemy Artificial Intelligence (They Know What You're Doing)
 * **State Machine:** Enemies don't just sit there waiting to die. They cycle through complex states: moving to waypoints, idling/drifting, aggressively engaging (circling or closing in), and attacking.
 * **Evasion Maneuvers:** Enemies actively scan for your incoming projectiles. If your shot is detected within their danger zone, they calculate an evasion vector and violently attempt to dodge while firing back. They want you dead as much as you want them dead.
 
-### 7. Visual Effects & UI (Eye Candy)
+### Visual Effects & UI (Eye Candy)
 * **Rich Text Rendering:** A custom `text` class that essentially acts as a mini-HTML parser, supporting basic tags (e.g., `<span style="color: #FF0000...">`) for multi-colored, styled text with fade and stretch effects because standard fonts are boring.
 * **Parallax Background:** A scrolling background system utilizing tiles and a dynamic, randomly generated starfield moving at different speeds to create dizzying depth. Welcome to space.
 
