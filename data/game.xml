@@ -1,0 +1,47 @@
+<game>
+	<settings>
+	</settings>
+	<levels>
+		<level id="1">
+			<title>Level 1</title>
+			<subtitle>
+				<![CDATA[All your base are belong to us.]]>
+			</subtitle>
+			<waves>
+				<wave random="False">
+					<reddevil hurtquotes="1" killquotes="2" position="20,30"></reddevil>
+					<reddevil hurtquotes="1" killquotes="2" position="50,30"></reddevil>
+					<reddevil hurtquotes="1" killquotes="2" position="80,30"></reddevil>
+				</wave>
+				<wave random="False">
+					<reddevil hurtquotes="1" killquotes="2" position="40,20"></reddevil>
+					<reddevil hurtquotes="1" killquotes="2" position="45,30"></reddevil>
+					<reddevil hurtquotes="1" killquotes="2" position="55,30"></reddevil>
+					<reddevil hurtquotes="1" killquotes="2" position="60,20"></reddevil>
+				</wave>
+			</waves>
+		</level>
+		<level id="2">
+			<title>Level 2</title>
+			<subtitle>...</subtitle>
+			<waves>
+				<wave random="False">
+					<reddevil hurtquotes="1" killquotes="2" position="20,20"></reddevil>
+				</wave>
+			</waves>
+		</level>
+	</levels>
+	<quotes>
+		<group id="1">
+			<quote>Fuck!</quote>
+			<quote>Screw you!</quote>
+			<quote>I'm foobar!</quote>
+		</group>
+		<group id="2">
+			<quote>Ha-ha!</quote>
+			<quote>Sucker!</quote>
+			<quote>Eat shit\nand die!</quote>
+			<quote>Loser!</quote>
+		</group>
+	</quotes>
+</game>
