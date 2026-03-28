@@ -56,7 +56,7 @@ No hardcoded levels. This old fella uses `libxml2` to rip game configurations st
 ```python
 class balloon(pygame.sprite.Sprite):
     def __init__(self, txt, target, fontname, fontsize):
-        # We don't do static images here. We calculate text dimensions dynamically.
+        # Don't do static images here. Calculate text dimensions dynamically.
         self.textlines = txt.split('\n')
         # ... math happens ...
         self.image = pygame.Surface((maxwidth + 30, maxheight + 30))
@@ -112,6 +112,6 @@ for cshot in aliens_shots.keys():
 ```python
 class textLine:
     def parse_text(self):
-        # We built our own mini-HTML parser for text rendering.
+        # Built my own mini-HTML parser for text rendering.
         # e.g., <html><body><p><span style="color:#FF0000">Warning! Critical Damage!</span></p></body></html>
 ```
