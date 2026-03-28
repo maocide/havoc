@@ -15,7 +15,7 @@ Built back when you had to understand trigonometry and geometry just to make a s
 
 <video src="https://github.com/user-attachments/assets/1ab69448-f7d8-4460-9201-f616cd75a121" width="100%" playsinline autoplay loop muted controls></video>
 
-## 🛠️ The Tech Stack of the Gods
+## 💾 The Tech Stack of the Gods
 * **Python** (The sacred texts)
 * **Pygame** (The hammer and anvil)
 * **libxml2** (Because hardcoding is for scrubs)
