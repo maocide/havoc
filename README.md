@@ -1,7 +1,7 @@
 # Havoc 🚀
 **A Time Capsule from 2008.** Before I was building Android OpenGL engines or working with Local LLMs, I was building custom 2D physics and state machines from scratch in pure Python. I recently dug this project out of the archives and am open-sourcing it for historical purposes.
 
-It’s a fun look back at the bare-metal math and memory management that built my foundational coding instincts.
+Built back when you had to intimately understand math and geometry just to make a sprite move across a screen, it’s a fun look back at the bare-metal mechanics and memory management that built my foundational coding instincts.
 
 *(Insert your gameplay .gif here!)*
 
