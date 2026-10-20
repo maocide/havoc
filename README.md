@@ -11,9 +11,9 @@
 
 **A Time Capsule from 2008.** Before I was building Android OpenGL engines or working with Local AI Agents, I was building custom 2D physics and state machines from scratch in pure Python. I recently dug this project out of the archives and am open-sourcing it for historical purposes.
 
-Built back when you had to understand trigonometry and geometry just to make a sprite move across a screen, it's a fun look back at the simple mechanics and memory management that was important at the time.
-
-<video src="https://github.com/user-attachments/assets/1ab69448-f7d8-4460-9201-f616cd75a121" width="100%" playsinline autoplay loop muted controls></video>
+<p align="center">
+  <img src="screenshots/hero_loop.webp" width="100%" alt="Havoc Gameplay in Action">
+</p>
 
 ## 💾 The Tech Stack of the Gods
 * **Python** (The sacred texts)
